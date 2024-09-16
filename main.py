@@ -6,7 +6,7 @@ RED = "#e7305b"
 GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 FONT_NAME = "Courier"
-WORK_MIN = 25
+WORK_MIN = 20
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 FONT = ("Courier", 10)
@@ -30,9 +30,9 @@ def reset_timer():
 def start_timer():
     global reps
     reps+=1
-    work_sec = WORK_MIN*20
-    long_break_sec = LONG_BREAK_MIN*20
-    short_break_sec = SHORT_BREAK_MIN*10
+    work_sec = WORK_MIN*60
+    long_break_sec = LONG_BREAK_MIN*60
+    short_break_sec = SHORT_BREAK_MIN*60
 
     if reps % 8 == 0:
         count_down(long_break_sec)
